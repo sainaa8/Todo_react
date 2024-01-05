@@ -1,8 +1,13 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import { Cards } from "@/Components/Card";
 export default function Home() {
-  return <div>asd</div>;
+  return (
+    <div
+      className="bg-dogImage w-[100vw]
+  h-[100vh] bg-no-repeat	bg-cover flex justify-center pt-[200px]"
+    >
+      <div>
+        <Cards />
+      </div>
+    </div>
+  );
 }
